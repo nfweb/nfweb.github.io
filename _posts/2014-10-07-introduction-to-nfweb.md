@@ -3,6 +3,7 @@ layout: post
 title:  "Introduction to the Nightfever Web Dev Team"
 date:   2014-10-07 16:14:09
 author: jomue
+excerpt: On this blog we will periodically report about our process on the Nightfever Web Dev team. Our mission is to build and operate websites and web-based services for Nightfever.
 ---
 Hello there! On this blog we will periodically report about our process on the Nightfever Web Dev team. Our mission is to build and operate websites and web-based services for [Nightfever](http://nightfever.org).
 
