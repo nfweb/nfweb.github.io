@@ -8,7 +8,7 @@ layout: default
     <h1 class="title">
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h1>
-    {{ post.excerpt | markdownify }}
+    {% if post.excerpt %}{{ post.excerpt | markdownify }}{% endif %}
     <aside class="meta-info mini">
       {{ post.date | date: "%b %-d, %Y" }}
     </aside>
