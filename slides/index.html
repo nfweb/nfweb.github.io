@@ -1,0 +1,22 @@
+---
+layout: page
+title: Slides
+---
+
+<section class="slides">  
+{% for page in site.pages %}
+  {% if page.layout == "shower" %}
+  <article>
+    <section class="slide"><div>
+      <h2 class="title">
+        <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">{{ page.title }}</a>
+      </h2>
+      <p>{{ page.date | date: "%b %-d, %Y" }} by {{page.author}}</p>
+      {{ page.subcaption }}
+    </div></section>
+    <p>{{ page.description }}</p>
+  </article>
+    
+  {% endif %}
+{% endfor %}
+</section>

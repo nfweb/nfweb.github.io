@@ -1,0 +1,219 @@
+---
+layout: shower
+title: Nightfever Website Navigation Concept
+author: jomue
+date: 2014-06-27 12:00:00
+description: >
+  Final presentation of a student work on the navigation concept for nightfever.org at the University of Bamberg.
+---
+<section class="slide"><div>
+  <h2>Agenda</h2>
+  <ul>
+    <li>Introduction</li>
+    <li>User Stories</li>
+    <li>Website Structure</li>
+    <li>Navigation</li>
+    <li>Mockups</li>
+  </ul>
+</div></section>
+<section class="slide cover w" id="Introduction"><div>
+  <img src="nightfever-6793.jpg" />
+  <h2>Nightfever</h2>
+  <p>
+    Nightfever is an international non-profit organisation consisting of a large amount of local groups that organize events. They open churches during the night and invite passersby to a moment of tranquility and encounter.
+  </p>
+  <p>
+    At the moment Nightfever is regularly held in about 100 cities world wide.
+  </p>
+  <style>
+  #Introduction h2, #Introduction p {
+    color: #eee;
+    text-shadow: 3px 3px 3px #222;
+  }
+  </style>
+</div></section>
+<section class="slide"><div>
+  <h2>Motivation</h2>
+  <ul>
+    <li>Our website is digitally outdated</li>
+    <li>Big challenges: Internationalization, mobile use</li>
+    <li>Increase features and usability</li>
+    <li>Software is hard to maintain and extend</li>
+    <li>Security and reliability threatened</li>
+  </ul>
+  <p class="note">Our web strategy needs a new approach!</p>
+</div></section>
+<section class="slide"><div>
+  <h2>Goals</h2>
+  <ul>
+    <li>Reliable and future proof platform</li>
+    <li>Modern design, mobile-ready</li>
+    <li>Internationalization support</li>
+    <li>High Usability for visitors and editors</li>
+  </ul>
+</div></section>
+<section class="slide shout"><div>
+  <h2>User Stories</h2>
+</div></section>
+<section class="slide"><div>
+  <h2>User Stories</h2>
+  <h3><strong>A:</strong> A user who <em>looks for general information on nightfever</em> wants to &hellip;</h3>
+  <ol>
+    <li>get a precise description of the idea and purpose of Nightfever</li>
+    <li>be able to learn more about it</li>
+    <li>discover nightfever cities and countries</li>
+    <li>learn about nearby locations and dates</li>
+  </ol>
+</div></section>
+<section class="slide"><div>
+  <h2>User Stories (Cont.)</h2>
+  <h3><strong>B:</strong> A user who <em>looks for information on a specific nightfever city</em>
+  wants to &hellip;</h3>
+  <ol>
+    <li>find upcoming events in that city</li>
+    <li>consume articles and media about previous events in that city</li>
+    <li>learn more about nightfever</li>
+    <li>discover nearby cities</li>
+  </ol>
+</div></section>
+<section class="slide"><div>
+  <h2>User Stories (Cont.)</h2>
+  <h3><strong>C:</strong> A regular user <em>looking for updates on Nightfever</em> wants to &hellip;</h3>
+  <ol>
+    <li>get the latest news (articles, media, newsletters)</li>
+    <li>know about upcoming important events</li>
+  </ol>
+  <h3><strong>D:</strong> A regular user <em>looking for updates on a specific city</em> wants to &hellip;</h3>
+  <ol>
+    <li>find upcoming events in that city and nearby cities</li>
+    <li>read latest news from that city</li>
+    <li>learn about important news from other cities and global</li>
+  </ol>
+</div></section>
+<section class="slide"><div>
+  <h2>User Stories (Cont.)</h2>
+  <h3><strong>E:</strong> A regular user <em>looking for updates on multiple city</em> wants to &hellip;</h3>
+  <ol>
+    <li>same as D</li>
+    <li>navigate between cities</li>
+  </ol>
+  <h3><strong>F:</strong> A user who <em>wants to participate or start Nightfever in his city</em> wants to &hellip;</h3>
+  <ol>
+    <li>get background information on nightfever</li>
+    <li>know how they can participate</li>
+  </ol>
+</div></section>
+<section class="slide shout"><div>
+  <h2>Website Structure</h2>
+</div></section>
+<section class="slide cover w"><div>
+  <img src="website structure.svg"  />
+</div></section>
+<section class="slide"><div>
+  <h2>Scopes</h2>
+  <ul>
+    <li>a scope acts as an independent website on its own domain</li>
+    <li>creates an individual hierarchy</li>
+    <li>contains content elements and aggregates them</li>
+    <li>user permissions are given on a scope domain</li>
+  </ul>
+</div></section>
+<section class="slide"><div>
+ <h2>Landing Pages</h2>
+ Each scope has a landing page, plus there are a few extra landing pages inside the global scope.
+  <ul>
+    <li>global site <code>nightfever.org</code></li>
+    <li>city sites (local nightfever groups) <code>[city].nightfever.org</code></li>
+    <li>project sites (teams &amp; major events) <code>[project].nightfever.org</code></li>
+    <li style="color: #555;">regional sites (countries) <code>nightfever.org/[region]</code></li>
+    <li style="color: #555;">micro-sites (nightfever specials) <code>nightfever.org/special</code></li>
+  </ul>
+</div></section>
+<section class="slide"><div>
+  <h2>Landing Pages (Cont.)</h2>
+  <p>Landing pages are customizabe using common elements:</p>
+  <ul>
+    <li>news feed</li>
+    <li>navigation</li>
+    <li>teasers/news</li>
+    <li>upcoming events</li>
+    <li>media elements</li>
+    <li>announcements</li>
+  </ul>
+</div></section>
+<section class="slide"><div>
+  <h2>Content Types</h2>
+  <ul>
+    <li><strong>Page</strong> static webpage</li>
+    <li><strong>Story</strong> full-featured articles with enhanced authoring features</li>
+    <li><strong>Event</strong> several event types</li>
+    <li><strong>Micropost</strong> short text post with the ability to reference internal or external content including a preview of the referenced content</li>
+    <li><strong>Venue</strong> event locations of Nightfever evenings</li>
+    <li><strong>Media & Gallery</strong> foto, video and audio elements</li>
+    <li><strong>Statement</strong> statements from visitors</li>
+  </ul>
+</div></section>
+<section class="slide shout"><div>
+  <h2>Web Navigation</h2>
+</div></section>
+<section class="slide"><div>
+  <h2>Navigation Features</h2>
+  <ol>
+    <li>subpages and other content in the same scope</li>
+    <li>quick access to all other cities and projects</li>
+    <li>switching between different localizations of the current page (if available)</li>
+    <li>related entities of a certain site (country -> cities, event -> city)</li>
+    <li>discover nearby nightfever cities</li>
+    <li>upcoming events (including but not limited to nearby cities)</li>
+  </ol>
+</div></section>
+<section class="slide cover h"><div>
+  <img src="simple-sitemap.svg">
+</div></section>
+<section class="slide"><div>
+  <h2>Navigation Layers</h2>
+  <p>Two seperate layers of navigation:</p>
+  <ul>
+    <li><strong>Global navigation</strong> allows to directly navigate to different sites</li>
+    <li><strong>Local navigation</strong> to reach pages inside a single site.</li>
+  </ul>
+  <p>Both navigation concepts should be available from any page.</p>
+</div></section>
+<section class="slide"><div>
+  <h2>Global Navigation</h2>
+  <p>Direct access to all other scopes from any page. To cover the amount of navigation targets (~100 cities) implemented as autosuggest text field.</p>
+  <p>The suggestions can easily enriched with metadata such as the distance from the users location or the next date.</p>
+  <p>This text field may also serve the purpose of a search field. Examples for this combination are at Facebook or Google Mail, where the search field suggest important navigation targets.</p>
+</div></section>
+<section class="slide"><div>
+  <h2>Global Navigation</h2>
+  <img src="mockup/autosuggest.png" />
+</div></section>
+<section class="slide"><div>
+  <h2>Partial Localization Problem</h2>
+  <ul>
+    <li>Most scopes only provide one localization, maybe two or three</li>
+    <li>Example: Nightfever Bamberg will most likly not provide russian content</li>
+    <li>Importance primarily for global navigation, local navigation should be coherent</li>
+    <li>Possible solution: Provide auto-generated stub landing page for the users current language</li>
+  </ul>
+</div></section>
+<section class="slide shout"><div>
+  <h2>Mockups</h2>
+</div></section>
+<section class="slide"><div>
+  <h2>Top Bar I</h2>
+  <img src="mockup/topbar - side menu.png" style="width: 80%;" />
+</div></section>
+<section class="slide"><div>
+  <h2>Top Bar II</h2>
+  <img src="mockup/top bar - top bar.png" style="width: 80%;" />
+</div></section>
+<section class="slide"><div>
+  <h2>Side Bar</h2>
+  <img src="mockup/sidebar.png" style="width: 90%;" />
+</div></section>
+<section class="slide cover w"><div>
+  <h2></h2>
+  <img src="Hand_Teelicht_0304_Paderborn.jpg" />
+</div></section>

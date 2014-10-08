@@ -1,0 +1,66 @@
+#container {
+  @include clearfix;
+
+  max-width: 55em;
+  margin: 0 auto;
+  padding: .5em;
+
+  > footer {
+
+    margin-top: 6rem;
+
+    @media(min-width: $on-laptop) {
+      @include outer-container;
+      > section {
+        @include span-columns(4);
+      }
+    }
+  }
+  > header {
+    margin: 6rem 0;
+    .logo img {
+      height: 7rem;
+      float: left;
+      margin-top: -2.7rem;
+
+      @media(min-width: $on-laptop){
+        height: 10rem;
+        padding: 0 1rem;
+        margin-top: -3.5rem;
+      }
+    }
+    hgroup {
+      h2 {
+        font: 300 3rem/1.2em $alternate-font-family;
+        @media(max-width: $on-laptop){
+          font-size: 1.8rem;
+        }
+
+        strong {
+          text-transform: uppercase;
+          font-weight: normal;
+        }
+        small {
+          font-size: 1em;
+          color: $grey-color;
+        }
+        a:hover {
+          color: $brand-color;
+        }
+      }
+      h3 {
+        margin: 0;
+        color: $grey-color;
+      }
+    }
+  }
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+@import "slides";

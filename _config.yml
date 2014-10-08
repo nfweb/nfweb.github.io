@@ -1,0 +1,21 @@
+# Site settings
+title: NIGHTFEVER webdev
+email: straightshoota@gmail.com
+description: >
+  This is the place where we will discuss the development of the Nightfever web sites and services.
+mission: News from the Nightfever Web Development Team
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://nfweb.github.io" # the base hostname & protocol for your site
+twitter_username: nfwebdev
+github_username:  nfweb
+
+# Build settings
+#pygments: true
+highlighter: rouge
+markdown: redcarpet
+encoding: utf-8
+permalink: /articles/:title
+
+authors:
+  jomue:
+    name: Johannes Müller

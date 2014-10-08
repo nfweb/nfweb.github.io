@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!--link rel="stylesheet" href="{{ "/css/shower.css" | prepend: site.baseurl }}"-->
+    <link rel="stylesheet" href="{{ "/slides/shower/styles/shower.css" | prepend: site.baseurl }}">
+  </head>
+
+  <body class="list">
+    <header class="caption">
+      <h1>{{ page.title }}</h1>
+      <!--<p>{% if page.subtitle %}{{ page.subtitle }} //{% endif %} {{ page.date | date: "%b %-d, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</p>-->
+      <p>{{ page.description }}</p>
+    </header>
+    <section class="slide cover" id="Cover"><div>
+      <h2>{{ page.title }}</h2>
+      <p>{% if page.subtitle %}{{ page.subtitle }} //{% endif %} {{ page.date | date: "%b %-d, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</p>
+      <!--
+        To apply styles to the certain slides
+        set slide ID to get needed elements
+        -->
+      <style>
+        #Cover h2 {
+          margin:30px 0 0;
+          color:#FFF;
+          text-align:center;
+          font-size:70px;
+          }
+        #Cover p {
+          margin:10px 0 0;
+          text-align:center;
+          color:#FFF;
+          font-style:italic;
+          font-size:20px;
+          }
+          #Cover p a {
+            color:#FFF;
+            }
+      </style>
+    </div></section>
+
+    {{ content }}
+
+    <section class="slide final"><div>
+      {% include header.html %}
+      <div class="footer">
+      {% include footer.html %}
+      </div>
+    </div></section>
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="/slides/shower/shower.min.js"></script>
+  </body>
+</html>

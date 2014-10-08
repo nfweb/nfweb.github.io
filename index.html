@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<section class="posts">  
+{% for post in site.posts %}
+  <article class="post post-mini">
+    <h1 class="title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h1>
+    {{ post.excerpt | markdownify }}
+    <aside class="meta-info mini">
+      {{ post.date | date: "%b %-d, %Y" }}
+    </aside>
+  </article>
+{% endfor %}
+</section>

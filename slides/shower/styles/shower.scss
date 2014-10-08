@@ -1,0 +1,72 @@
+---
+# Sass file for shower presentation
+---
+@import "variables";
+
+@import 'shower/defaults';
+
+$blue: $brand-color;
+
+@import 'shower/fonts';
+@import 'shower/reset';
+@import "shower/screen";
+
+.slide.final {
+  .logo img {
+    float: left;
+    height: 10rem;
+    padding: 0 1rem;
+    margin-top: -3.5rem;
+  }
+  hgroup {
+    h2 {
+      font: 300 3rem/1.2em $alternate-font-family;
+      margin: 0;
+
+      strong {
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+      small {
+        font-size: 1em;
+        color: $grey-color;
+      }
+      a {
+        color: $brand-color;
+      }
+      a:hover {
+        color: $brand-color;
+      }
+    }
+    h3 {
+      margin: 0;
+      color: $grey-color;
+    }
+  }
+  a {
+    text-decoration: none;
+    border: none;
+  }
+  .contact-list,
+  .social-media-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    > li::before {
+      content: "";
+    }
+  }
+}
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}

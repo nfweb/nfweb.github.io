@@ -1,0 +1,34 @@
+$post-mini-left-width: 8rem;
+.post {
+  h1.title {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  &.post-mini {
+    padding-bottom: 3rem;
+    padding-left: $post-mini-left-width + $spacing-unit;
+    position: relative;
+
+    h1.title {
+      &, a {
+        font-size: 1rem;
+        //font: 300 3rem/1.2em $alternate-font-family;
+        color: $text-color;
+        font-weight: bold;
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+  .meta-info {
+    color: $grey-color;
+
+    &.mini {
+      position: absolute;
+      left: 0;
+      width: $post-mini-left-width;
+      top: 0;
+    }
+  }
+}
