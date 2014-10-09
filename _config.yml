@@ -20,18 +20,6 @@ authors:
   jomue:
     name: Johannes Müller
 
-collections:
-  slides:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "slides"
-    values:
-      layout: "shower"
-
 gems:
 - jekyll-mentions
 - jemoji
