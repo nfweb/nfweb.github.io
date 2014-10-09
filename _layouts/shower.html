@@ -15,13 +15,14 @@
 
   <body class="list">
     <header class="caption">
-      <h1>{{ page.title }}</h1>
+      <h1>{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ page.title }}{% endif %}</h1>
       <!--<p>{% if page.subtitle %}{{ page.subtitle }} //{% endif %} {{ page.date | date: "%b %-d, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</p>-->
       <p>{{ page.description }}</p>
     </header>
     <section class="slide cover" id="Cover"><div>
       <h2>{{ page.title }}</h2>
-      <p>{% if page.subtitle %}{{ page.subtitle }} //{% endif %} {{ page.date | date: "%b %-d, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</p>
+      <p>{{ page.date | date: "%b %-d, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</p>
+      {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
       <!--
         To apply styles to the certain slides
         set slide ID to get needed elements
