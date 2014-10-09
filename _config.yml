@@ -19,3 +19,12 @@ excerpt_separator: ""
 authors:
   jomue:
     name: Johannes Müller
+
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+
+safe: true
+lsi: false
