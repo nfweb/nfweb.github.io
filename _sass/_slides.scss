@@ -15,14 +15,6 @@ $slidewidth: 512px;
       clear: left;
     }
   }
-  article h1.title {
-    font-size: 1.2rem;
-    line-height: 1;
-    margin-bottom: $spacing-unit / 2;
-    min-height: 2em;
-    width: 90%;
-    font-weight: normal;
-  }
 }
 
 .slide {
@@ -67,7 +59,7 @@ $slidewidth: 512px;
     margin: 10px 0 0;
     text-align: center;
     color: #FFF;
-    font: italic 18px/2 'PT Sans', sans-serif;
+    font: italic 15px/2 'PT Sans', sans-serif;
   }
   + p {
     width: $slidewidth * .9;
