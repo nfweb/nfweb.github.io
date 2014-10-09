@@ -2,21 +2,18 @@
 layout: page
 title: Slides
 ---
-
 <section class="slides">  
-{% for page in site.pages %}
-  {% if page.layout == "shower" %}
+{% for slideshow in site.slides %}
   <article>
+    <h1 class="title"><a href="{{ slideshow.url | replace:'index.html','' | prepend: site.baseurl }}">{% if slideshow.subtitle %}{{ slideshow.subtitle }}{% else %}{{ slideshow.title }}{% endif %}</a></h1>
     <section class="slide"><div>
       <h2 class="title">
-        <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">{{ page.title }}</a>
+        <a href="{{ slideshow.url | replace:'index.html','' | prepend: site.baseurl }}">{{ slideshow.title }}</a>
       </h2>
-      <p>{{ page.date | date: "%b %-d, %Y" }} by {{page.author}}</p>
-      {{ page.subcaption }}
+      <p>{{ slideshow.date | date: "%b %-d, %Y" }} by {{slideshow.author}}</p>
+      {{ slideshow.subcaption }}
     </div></section>
-    <p>{{ page.description }}</p>
+    <p>{{ slideshow.description }}</p>
   </article>
-    
-  {% endif %}
 {% endfor %}
 </section>
