@@ -7,7 +7,9 @@ $slidewidth: 512px;
   width: $slidewidth * 2;
 
   > article {
-    float: left;
+    @media(min-width: $slidewidth * 2) {
+      float: left;
+    }
     width: $slidewidth;
     padding-bottom: $spacing-unit;
 
